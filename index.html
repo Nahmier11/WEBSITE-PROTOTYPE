@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Pertamaku</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #dbeafe, #f5d0fe);
+      text-align: center;
+      padding: 60px 20px;
+      color: #1e293b;
+    }
+
+    .kartu {
+      background: white;
+      max-width: 500px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px #00000020;
+    }
+
+    button {
+      background: #7c3aed;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="kartu">
+    <h1>Halo, Dunia!</h1>
+    <p>Selamat datang di website pertamaku.</p>
+    <p id="pesan">Aku sedang belajar membuat website.</p>
+
+    <button onclick="ubahPesan()">
+      Klik Aku!
+    </button>
+  </div>
+
+  <script>
+    function ubahPesan() {
+      document.getElementById("pesan").textContent =
+        "Yeay! Tombol website-ku berhasil digunakan!";
+    }
+  </script>
+</body>
+</html>
